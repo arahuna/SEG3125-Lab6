@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+		<!-- Personal stylesheet-->
+		<link href="../css/niceSurvey.css" rel="stylesheet" type="text/css" />
+		<title>Survey</title>
+	</head>
+	<body>
+		<div class="form-box">
+			<div class="form-container">
+				<h1 class="title">Survey</h1>
+				<div class="website">
+					<h2>
+						What are your thoughts on the UI of this
+						<a href="https://www.noname.ca/en_ca/">no name</a> website
+					</h2>
+					<br />
+					<a href="https://www.noname.ca/en_ca/">
+						<img
+							src="../images/noname-Frontpage.JPG"
+							alt="https://www.noname.ca/en_ca"
+						/>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<form>
+			<div class="form-box">
+				<div class="form-container">
+					<h2>Question 1</h2>
+					<p>What is the goal of this website?</p>
+					<input type="text" name="Q1" placeholder="Goal..." required/>
+				</div>
+			</div>
+
+			<div class="form-box">
+				<div class="form-container">
+					<h2>Question 2</h2>
+					<p>What colour sticks out the most?</p>
+					<input type="radio" name="Q2" value="Yellow"/>
+					Yellow <br />
+					<input type="radio" name="Q2" value="Black"/>
+					Black <br />
+					<input type="radio" name="Q2" value="Red"/>
+					Red <br />
+				</div>
+			</div>
+
+			<div class="form-box">
+				<div class="form-container">
+					<h2>Question 3</h2>
+					<p>Does the font choice make sense?</p>
+					<select id="selector" name="Q3">
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+						<option value="not_sure" selected="selected">I'm not sure</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-box">
+				<div class="form-container">
+					<h2>Question 4</h2>
+					<p>
+						Which of these statements in your opinion match the website? (select
+						one or more)
+					</p>
+					<input type="checkbox" value="It matches the branding of no name" name="Q4" /> It matches the branding of no name
+					<br />
+					<input type="checkbox" value="It's clean and easy to navigate" name="Q4" /> It's clean and easy to navigate
+					<br />
+					<input type="checkbox" value="It's pretty rad" name="Q4" /> It's pretty rad <br />
+					<input type="checkbox" value="It's quest is to find the holy" name="Q4" /> It's quest is to find the holy
+					grail <br />
+				</div>
+			</div>
+
+			<div class="form-box">
+				<div class="form-container">
+					<h2>Comments</h2>
+					<p>
+						Before completing the survey do you have any comments regarding the
+						website?
+					</p>
+					<textarea rows="5" cols="30" name="comments" placeholder="Enter your comments..." required></textarea>
+				</div>
+			</div>
+
+			<div class="form-box">
+				<div class="form-container">
+					<h2>Question 5</h2>
+					<p>
+						How much do you agree with this statetment : This is a well designed
+						website and UI
+					</p>
+					<p class="option">
+						Strongly disagree <br />
+						<input type="radio" value="Strongly_disagree" name="Q5" />
+					</p>
+					<p class="option">
+						Somewhat disagree <br />
+						<input type="radio" value="Somewhat disagree" name="Q5" />
+					</p>
+					<p class="option">
+						Neither agree nor disagree <br />
+						<input type="radio" value="Neither agree nor disagree" name="Q5" />
+					</p>
+					<p class="option">
+						Somewhat agree <br />
+						<input type="radio" value="Somewhat agree" name="Q5" />
+					</p>
+					<p class="option">
+						Strongly agree <br />
+						<input type="radio" value="Strongly agree" name="Q5" />
+					</p>
+				</div>
+			</div>
+			<div class="alert alert-info" role="alert" id="success">
+				Success! You've submitted the survey!
+			</div>
+			<button type="submit" class="btn-primary btn btn-block" id="submitBtn">Submit</button>
+		</form>
+		<p class="signature">Website designed by Ara Kirijian</p>
+		<script src="../assets/action.js"></script>
+	</body>
+</html>
